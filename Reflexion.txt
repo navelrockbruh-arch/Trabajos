@@ -1,0 +1,11 @@
+¿Qué partes de tu prompt funcionaron bien y por qué?
+
+-la descripción del texto, por que fue claro i directo.
+
+¿Qué tuvo que corregir o mejorar después de ver el primer resultado?
+
+-No se tuvo que corregir o mejorar, ya que salio como lo esperaba.
+
+¿Qué aprendiste sobre la importancia del detalle en un prompt?
+
+-qué evita que la IA se confunda y de un resultado no relacionado con lo descrito.
