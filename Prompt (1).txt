@@ -1,0 +1,13 @@
+Actua como un desarrollador de páginas web, vas a crear una página web para el dueño de un restaurante llamado sabor norteño, que vende comida criolla y norteña peruana, ubicado en Tacna. Tiene que contener las siguientes partes:
+1. un encabezado(qué contenga un logo, nombre del restaurante y menú de navegación); una sección hero qué contenga una frase de bienvenida llamativa y un botón de llamada a la accion: "ver carta".
+2. Un sección de carta/menu, que contenga al menos 6 platos, cada uno con nombre, descripción breve y    precio. 
+3. Una sección nosotros, con una breve historia del restaurante, como Sabor Norteño es un restaurante familiar ubicado en Tacna, especializado encomida criolla y norteña peruana (ceviche, arroz con leche, seco de cabrito, causalimeña). Tiene 8 años de trayectoria, atiende a familias y turistas.
+4. Una sección de horarios y contactos, que contenga, direccion, teléfono, horario de atención yun mapa embebido (Google Maps). 
+5.Y un footer, con redes sociales y créditos.
+
+Para el stilo visual, utiliza colores calidos, una tipografía llamativa y una estética norteña y criolla.
+
+Solo puede ser HTML, CSS y JS embebidos, responsive.
+
+Solo entregame el código, sin explicaciónes. Por favor y gracias.
+

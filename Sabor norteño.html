@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabor Norteño | Restaurante Criollo en Tacna</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#fff8f0;
+      color:#333;
+    }
+
+    header{
+      width:100%;
+      background:#8b0000;
+      color:white;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar{
+      max-width:1200px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 20px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo img{
+      width:55px;
+      height:55px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid #fff;
+    }
+
+    .logo h1{
+      font-size:1.7rem;
+      color:#ffd166;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#ffd166;
+    }
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content{
+      color:white;
+      max-width:700px;
+    }
+
+    .hero h2{
+      font-size:3rem;
+      margin-bottom:20px;
+      color:#ffd166;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      background:#ff7b00;
+      color:white;
+      padding:15px 35px;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e56b00;
+    }
+
+    section{
+      padding:100px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:2.5rem;
+      color:#8b0000;
+      margin-bottom:50px;
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .menu-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .menu-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .menu-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .menu-content{
+      padding:20px;
+    }
+
+    .menu-content h3{
+      color:#8b0000;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#ff7b00;
+      font-size:1.2rem;
+      font-weight:bold;
+      margin-top:15px;
+    }
+
+    .nosotros{
+      background:#fff1df;
+    }
+
+    .nosotros-content{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:40px;
+    }
+
+    .nosotros-text{
+      flex:1;
+    }
+
+    .nosotros-text p{
+      line-height:1.8;
+      font-size:1.1rem;
+    }
+
+    .nosotros-img{
+      flex:1;
+    }
+
+    .nosotros-img img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .contacto-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .contact-info{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h3{
+      color:#8b0000;
+      margin-bottom:20px;
+    }
+
+    .contact-info p{
+      margin-bottom:15px;
+      font-size:1rem;
+    }
+
+    iframe{
+      width:100%;
+      height:350px;
+      border:none;
+      border-radius:15px;
+    }
+
+    footer{
+      background:#8b0000;
+      color:white;
+      text-align:center;
+      padding:30px 20px;
+    }
+
+    .socials{
+      margin-bottom:15px;
+    }
+
+    .socials a{
+      color:#ffd166;
+      margin:0 10px;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    @media(max-width:768px){
+
+      .navbar{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero h2{
+        font-size:2.2rem;
+      }
+
+      .hero p{
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Logo">
+        <h1>Sabor Norteño</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Carta</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>El auténtico sabor criollo y norteño del Perú</h2>
+      <p>Disfruta de los mejores platos tradicionales en un ambiente familiar y acogedor en Tacna.</p>
+      <a href="#menu" class="btn">Ver Carta</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2 class="section-title">Nuestra Carta</h2>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1604908176997-4318e7d1f7b3?q=80&w=1200&auto=format&fit=crop" alt="Ceviche">
+          <div class="menu-content">
+            <h3>Ceviche Norteño</h3>
+            <p>Pescado fresco marinado en limón con choclo y camote.</p>
+            <div class="price">S/ 35.00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1625943555419-56a2cb596640?q=80&w=1200&auto=format&fit=crop" alt="Seco de Cabrito">
+          <div class="menu-content">
+            <h3>Seco de Cabrito</h3>
+            <p>Tradicional guiso norteño acompañado de arroz y frejoles.</p>
+            <div class="price">S/ 42.00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=1200&auto=format&fit=crop" alt="Causa Limeña">
+          <div class="menu-content">
+            <h3>Causa Limeña</h3>
+            <p>Suave papa amarilla rellena de pollo y palta.</p>
+            <div class="price">S/ 24.00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=1200&auto=format&fit=crop" alt="Arroz con Mariscos">
+          <div class="menu-content">
+            <h3>Arroz con Mariscos</h3>
+            <p>Delicioso arroz sazonado con mariscos frescos y ají peruano.</p>
+            <div class="price">S/ 38.00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1200&auto=format&fit=crop" alt="Lomo Saltado">
+          <div class="menu-content">
+            <h3>Lomo Saltado</h3>
+            <p>Jugosa carne salteada con cebolla, tomate y papas fritas.</p>
+            <div class="price">S/ 36.00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?q=80&w=1200&auto=format&fit=crop" alt="Arroz con Leche">
+          <div class="menu-content">
+            <h3>Arroz con Leche</h3>
+            <p>Postre casero tradicional con canela y leche aromática.</p>
+            <div class="price">S/ 12.00</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <div class="container">
+      <h2 class="section-title">Nosotros</h2>
+
+      <div class="nosotros-content">
+
+        <div class="nosotros-text">
+          <p>
+            Sabor Norteño es un restaurante familiar ubicado en Tacna, especializado en comida criolla y norteña peruana como ceviche, arroz con leche, seco de cabrito y causa limeña.
+          </p>
+
+          <br>
+
+          <p>
+            Con más de 8 años de trayectoria, nos hemos convertido en un lugar favorito para familias y turistas que buscan disfrutar del auténtico sabor peruano en un ambiente cálido y acogedor.
+          </p>
+        </div>
+
+        <div class="nosotros-img">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Restaurante">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title">Horarios y Contacto</h2>
+
+      <div class="contacto-grid">
+
+        <div class="contact-info">
+          <h3>Información</h3>
+
+          <p><strong>📍 Dirección:</strong> Av. San Martín 1250, Tacna, Perú</p>
+
+          <p><strong>📞 Teléfono:</strong> +51 952 456 789</p>
+
+          <p><strong>🕒 Horario:</strong><br>
+          Lunes a Domingo<br>
+          11:00 AM - 10:00 PM</p>
+        </div>
+
+        <div>
+          <iframe 
+            src="https://www.google.com/maps?q=Tacna,Peru&output=embed"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+
+    <p>© 2026 Sabor Norteño - Todos los derechos reservados.</p>
+    <p>Diseñado por Abrahan Web Studio</p>
+  </footer>
+
+  <script>
+    const links = document.querySelectorAll('nav a');
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav').classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
