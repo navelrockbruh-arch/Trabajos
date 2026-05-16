@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sabor Norteño | Restaurante Criollo y Norteño</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Logo">
+      <h1>Sabor Norteño</h1>
+    </div>
+
+    <!-- MENÚ -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Carta</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+
+        <!-- BOTÓN NUEVO -->
+        <li><a href="Nuestro_local.html">Nuestro Local</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+      <h2>El auténtico sabor criollo y norteño en Tacna</h2>
+
+      <p>
+        Disfruta de nuestros platos tradicionales preparados con pasión y sazón peruana.
+      </p>
+
+      <a href="#menu" class="btn">Ver Carta</a>
+
+    </div>
+
+  </section>
+
+  <!-- MENÚ -->
+  <section id="menu">
+
+    <div class="titulo">
+      <h2>Nuestra Carta</h2>
+    </div>
+
+    <div class="menu-grid">
+
+      <!-- Plato 1 -->
+      <div class="plato">
+
+        <img src="https://eltiempo.pe/wp-content/uploads/2024/06/ceviche-4.jpg" alt="Ceviche Norteño">
+
+        <div class="plato-content">
+
+          <h3>Ceviche Norteño</h3>
+
+          <p>
+            Pescado fresco marinado en limón con choclo y camote.
+          </p>
+
+          <span class="precio">S/ 35.00</span>
+
+        </div>
+
+      </div>
+
+      <!-- Plato 2 -->
+      <div class="plato">
+
+        <img src="data:image/jpeg;base64,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" alt="Seco de Cabrito">
+
+        <div class="plato-content">
+
+          <h3>Seco de Cabrito</h3>
+
+          <p>
+            Tradicional guiso norteño acompañado con arroz y frejoles.
+          </p>
+
+          <span class="precio">S/ 42.00</span>
+
+        </div>
+
+      </div>
+
+      <!-- Plato 3 -->
+      <div class="plato">
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI2n4tBaORHeSjajp5KdKCQW1hUoXifhrVAiacHuUL7uTIwHspaDXSciJgukJGH6mfNIjCqQrx_Pg9ovhj64v9IhE_S5ulJdiD9RwM40ZzQWZzqkmdaxPAbfHZ5VMs1_O8bGQPDwJAsxU/s1600-rw/receta-causa-lime%25C3%25B1a-pollo-aguacate.jpg" alt="Causa Limeña">
+
+        <div class="plato-content">
+
+          <h3>Causa Limeña</h3>
+
+          <p>
+            Papa amarilla rellena con pollo y mayonesa casera.
+          </p>
+
+          <span class="precio">S/ 24.00</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+
+    <div class="titulo">
+      <h2>Nosotros</h2>
+    </div>
+
+    <div class="nosotros">
+
+      <p>
+        Sabor Norteño es un restaurante familiar ubicado en Tacna,
+        especializado en comida criolla y norteña peruana.
+      </p>
+
+      <br>
+
+      <p>
+        Durante más de 8 años hemos compartido con orgullo los sabores tradicionales del Perú.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+
+    <div class="titulo">
+      <h2>Horarios y Contacto</h2>
+    </div>
+
+    <div class="contacto-container">
+
+      <div class="contacto-info">
+
+        <h3>Información</h3>
+
+        <p><strong>📍 Dirección:</strong> Av. Bolognesi 1234, Tacna - Perú</p>
+
+        <p><strong>📞 Teléfono:</strong> +51 952 123 456</p>
+
+        <p><strong>🕒 Horario:</strong> Lunes a Domingo | 11:00 AM - 10:00 PM</p>
+
+      </div>
+
+      <!-- MAPA -->
+      <div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.8434688990967!2d-70.25196892508585!3d-18.014647382980804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915a54b8d4c07cb1%3A0x58cf4a7d0f7fd540!2sTacna!5e0!3m2!1ses!2spe!4v1710000000000!5m2!1ses!2spe"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="redes">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+
+    <p>© 2026 Sabor Norteño - Todos los derechos reservados.</p>
+
+    <p>Diseñado con sabor peruano 🇵🇪</p>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/app.js"></script>
+
+</body>
+</html>
+
