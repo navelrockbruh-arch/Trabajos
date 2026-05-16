@@ -1,0 +1,67 @@
+/* =========================
+   NUESTRO LOCAL
+========================= */
+
+.local-section{
+    padding: 80px 10%;
+    background: #fff8f0;
+}
+
+.local-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.local-img{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease;
+}
+
+.local-img:hover{
+    transform: scale(1.03);
+}
+
+.local-texto{
+    max-width: 500px;
+}
+
+.local-texto p{
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.btn-local{
+    display: inline-block;
+    padding: 14px 30px;
+    background: #d62828;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-local:hover{
+    background: #a4161a;
+    transform: translateY(-3px);
+}
+
+.btn-volver{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
